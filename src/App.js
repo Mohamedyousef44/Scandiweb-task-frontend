@@ -1,10 +1,18 @@
+
 import './App.css';
+import { Routes , Route } from 'react-router-dom';
+import ProductList from './pages/ProductList';
+import AddingProduct from './pages/AddingProduct';
+
 
 function App() {
   return (
-    <div>
-      hi world
-    </div>
+    <>
+    <Routes>
+      <Route path='/' element={<ProductList />} />
+      <Route path='/add-product' element={<AddingProduct />} />
+    </Routes>
+    </>
   );
 }
 
