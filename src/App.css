@@ -1,1 +1,10 @@
+.product-card {
+  width: 100% !important;
+}
 
+/* Apply styles for screens larger than or equal to 600px */
+@media (min-width: 600px) {
+  .product-card {
+    width: 20% !important;
+  }
+}
